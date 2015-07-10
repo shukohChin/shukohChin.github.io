@@ -1,0 +1,17 @@
+markdown: kramdown
+highlighter: pygments
+permalink: blog/:year/:month/:day/:title.html
+paginate: 6
+paginate_path: page/:num
+
+blog:
+    name:shukoh
+    description:Data Science & other
+    title:Data Science
+    url:http://shukohchin.github.io/
+author:
+    # Profile links on the left sidebar, leave blank to ignore
+    name:shukoh
+    email:shukoh.chin@gmail.com
+    github:shukohChin
+    logo:http://shukohchin.github.io/res/img/cat.jpg
