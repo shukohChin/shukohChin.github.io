@@ -5,19 +5,25 @@ category: DataScience
 tags: [algorithm, coursera]
 ---
 
-### Quick-find
-##### Data structure
+
+# 1. Quick-find
+
+### 1.1 Data structure
 * Integer array id[] of length N
 * Interpretation: p and q are connected iff(if and only if) they have the same id
 ![pic](/images/DataScience/algorithm_1.png)
-##### Find
+
+### 1.2 Find
 + Check if p and q have the same id
 	- id[6]=0 id[1]=1 6 and 1 are not connected
-##### Union
+
+### 1.3 Union
 + Merge components containing p and q, change entries whose id equals id[p] to id[q]
 	- after union 6 and 1  
 ![pic](/images/DataScience/algorithm_2.png)
-##### Java implementation
+
+### 1.4 Java implementation
+```java
 	public class QuickFindUF {
 		private int[] id;
 
@@ -39,23 +45,30 @@ tags: [algorithm, coursera]
 					id[i] = qid;
 		}
 	}
-##### Quick-find is too slow. 
+```
+
+### 1.5 Quick-find is too slow. 
 * It takes $N^2$ array accesses to process a sequence of $N$ union commands on $N$ objects.
 
 
 
-### Quick union[lazy approach]
-##### Data structure
+# 2. Quick union[lazy approach]
+
+### 2.1 Data structure
 * Integer array id[] of length N
 * Interpretation: id[i] is parent of i
 * _Root_ of i is id[id[id[...id[i]...]]]
 
-##### Find
+### 2.2 Find
 + Check if p and q have the same root
-##### Union
+
+### 2.3 Union
 + To merge components containing p and q, set the id of p's root to the id of q's root.
 ![pic](/images/DataScience/algorithm_3.png)
-##### Java implemention
+
+### 2.4 Java implemention
+
+```java
 	public class QuickFindUF {
 		private int[] id;
 
@@ -81,5 +94,7 @@ tags: [algorithm, coursera]
 			id[i] = j;
 		}
 	}
-##### Quick union is also too slow
+```
+
+### 2.5 Quick union is also too slow
 ![pic](/images/DataScience/algorithm_4.png)
