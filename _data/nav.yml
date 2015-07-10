@@ -10,11 +10,11 @@
   icon: fa fa-tags
   title: Tags
 
-- href: /page/read.html
+- href: /page/search.html
   icon:  fa fa-search
   title: Search
 
-- href: /page/search.html
+- href: /page/read.html
   icon:  fa fa-bookmark
   title: Read
 
