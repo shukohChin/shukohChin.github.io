@@ -13,7 +13,7 @@ index: true
         {{ post.date | date: "%Y" }}年{{ post.date | date: "%m" }}月{{ post.date | date: "%d" }}日
         <i class="space"></i>
         {% for item in (0..post.categories.size) %}
-        {% unless forloop.last %}<i class="fa fa-tags"></i>{% endunless %}
+        {% unless forloop.last %}<i class="fa fa-archive"></i>{% endunless %}
         <a class="post-category" href="/page/category.html#{{ post.categories[item] }}">{{ post.categories[item] }}</a>
         {% endfor %}
       </p>

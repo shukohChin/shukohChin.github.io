@@ -3,7 +3,7 @@
   title: Time-line
 
 - href: /page/category.html
-  icon: fa fa-tags
+  icon: fa fa-archive
   title: Category
   
 - href: /page/tags.html
@@ -11,11 +11,11 @@
   title: Tags
 
 - href: /page/read.html
-  icon:  fa fa-book
+  icon:  fa fa-search
   title: Read
 
 - href: /page/search.html
-  icon:  fa fa-book
+  icon:  fa fa-paper-plane-o
   title: Search
   
 - href: /page/about.html
