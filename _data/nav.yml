@@ -12,11 +12,11 @@
 
 - href: /page/read.html
   icon:  fa fa-search
-  title: Read
+  title: Search
 
 - href: /page/search.html
   icon:  fa fa-paper-plane-o
-  title: Search
+  title: Read
   
 - href: /page/about.html
   icon: fa fa-paper-plane-o
