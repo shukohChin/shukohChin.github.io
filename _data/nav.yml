@@ -5,7 +5,7 @@
 - href: /page/category.html
   icon: fa fa-archive
   title: Category
-  
+
 - href: /page/tags.html
   icon: fa fa-tags
   title: Tags
@@ -15,9 +15,9 @@
   title: Search
 
 - href: /page/search.html
-  icon:  fa fa-paper-plane-o
+  icon:  fa fa-bookmark
   title: Read
-  
+
 - href: /page/about.html
   icon: fa fa-paper-plane-o
   title: About
