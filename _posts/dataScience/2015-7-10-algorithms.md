@@ -1,12 +1,9 @@
 ---
 layout: post
-title: Algorithm Week1
-comments: true
+title: UnionFind
 category: DataScience
 tags: [algorithm, coursera]
 ---
-
-#  Week1 - UnionFind
 
 ### Quick-find
 ##### Data structure
