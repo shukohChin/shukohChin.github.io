@@ -5,6 +5,7 @@ category: DataScience
 tags: [R, The_Analytics_Edge, edx]
 ---
 
+<!-- more -->
 
 ### 1. basic
   - binary variable: 非此即彼的变量，包含在categorical variable里  

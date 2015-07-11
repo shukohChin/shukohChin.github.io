@@ -9,6 +9,8 @@ tags: [machine_learning, coursera]
 - [1.Lenear Regression](#1)
 - [2.Logistic Regression](#2)
 
+<!-- more -->
+
 <a name="1"></a>
 # 1.Lenear Regression
 ### Machine learning定義

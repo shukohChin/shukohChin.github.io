@@ -5,9 +5,9 @@ category: DataScience
 tags: [R, Rmarkdown]
 ---
 
+<!-- more -->
 
 ## Rmarkdown
-
 
 1.Do not echo code
 

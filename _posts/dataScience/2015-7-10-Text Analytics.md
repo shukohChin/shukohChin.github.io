@@ -5,6 +5,7 @@ category: DataScience
 tags: [R, The_Analytics_Edge, edx]
 ---
 
+<!-- more -->
 
 ### 1. A Bag of Words
 - Count the number of times each words appears  

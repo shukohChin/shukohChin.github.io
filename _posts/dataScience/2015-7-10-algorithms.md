@@ -4,6 +4,8 @@ title: UnionFind
 category: DataScience
 tags: [algorithm, coursera]
 ---
+  
+<!-- more -->
 
 
 # 1. Quick-find
