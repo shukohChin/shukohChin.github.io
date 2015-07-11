@@ -462,8 +462,8 @@ blockquote {
 }
 code {
 	font-family: Consolas, Arial,sans-serif;
-	font-size:15px;
-	background:#d3d7d4;
+	font-size:16px;
+	background:#E3E3E3;
 	color:#000000;
 	padding:0 4px;
 	border-radius:4px;
@@ -473,10 +473,9 @@ code {
 }
 pre code {
 	font-family: Consolas, Arial,sans-serif;
-	font-size:13px;
+	font-size:15px;
 	margin-left:4%;
-	background:#fff;
-	background:#d3d7d4;
+	background:#E3E3E3;
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
