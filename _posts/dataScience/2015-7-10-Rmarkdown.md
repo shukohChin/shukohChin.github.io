@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simple Rmarkdown syntax
+title: Rmarkdown syntax
 category: DataScience
 tags: [R, Rmarkdown]
 ---
@@ -23,9 +23,9 @@ results="hide"
 
 3.Inline text computations
 
-> \`\`\`{r computetime}
-time <- format(Sys.time(), "%a %b %d %X %Y")
-rand <- rnorm(1)
+> \`\`\`{r computetime}  
+>time <- format(Sys.time(), "%a %b %d %X %Y")  
+>rand <- rnorm(1)  
 > \`\`\`
 
 use time and rand
@@ -37,16 +37,16 @@ My favorite random number is 'r rand'.
 
 4.Incorporating Graphics
 
-> \`\`\`{r showtable, results="asis"}
-library(xtable)
-xt <- xtable(summary(fit))
-print(xt, type="html")
+> \`\`\`{r showtable, results="asis"}  
+>library(xtable)  
+>xt <- xtable(summary(fit))  
+>print(xt, type="html")  
 > \`\`\`
 
 5.Set globle options
 
-> \`\`\`{r setoptions, echo=FALSE}
-opts_chunk$set(echo=FALSE, results="hide")
+> \`\`\`{r setoptions, echo=FALSE}  
+>opts_chunk$set(echo=FALSE, results="hide")  
 > \`\`\`
 
 6.Some common options
