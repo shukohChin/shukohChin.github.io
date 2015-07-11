@@ -6,7 +6,7 @@ tags: [R, The_Analytics_Edge, edx]
 ---
 
 
-### A Bag of Words
+### 1. A Bag of Words
 - Count the number of times each words appears  
 	-> used as baseline in text analytics projects
 - preprocessing
@@ -21,7 +21,6 @@ tags: [R, The_Analytics_Edge, edx]
 		- can write a rule-based algorithm -> **the popular way**  
 		eg.if word ends in "ed","ing","ly", remove it
 
-### Preprocessing
 ```r
 tweets = read.csv("tweets.csv", stringsAsFactors=FALSE)
 install.packages("tm")
@@ -38,7 +37,8 @@ corpus = tm_map(corpus, stemDocument) # stemming
 # may need to set local by using "Sys.setlocale("LC_ALL", "C")"
 ```
 
-### using A Bag of Words
+### 2. using A Bag of Words
+
 ```r
 frequencies = DocumentTermMatrix(corpus)
 # see Docs(tweets) from 1000 to 1005, terms(words) from 505 to 515
@@ -62,7 +62,7 @@ train = subset(tweetsSparse, split==TRUE)
 test = subset(tweetsSparse, split==FALSE)
 ```
 
-### create cart model
+### 3. create cart model
 ```r
 library(rpart)
 library(rpart.plot)

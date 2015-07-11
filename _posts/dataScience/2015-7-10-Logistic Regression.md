@@ -6,7 +6,7 @@ tags: [R, The_Analytics_Edge, edx]
 ---
 
 
-### basic
+### 1. basic
   - binary variable: 非此即彼的变量，包含在categorical variable里  
   - 公式: $$P(y = 1) = \frac{1}{1+e^{-(\beta\_0+\beta\_1x\_1+\beta\_2x\_2+...+\beta\_kx\_k)}}$$
   
@@ -21,8 +21,9 @@ tags: [R, The_Analytics_Edge, edx]
 
   $$log(Odds)=\beta\_0 + \beta\_1x\_1 + \beta\_2x\_2 + ... + \beta\_kx\_k$$
   
+### 2. create logistic model
+- spit train&test set  
 
-### spit train&test set
 ```r
 install.packages("caTools")
 set.seed(88)
@@ -31,16 +32,21 @@ split = sample.spit(data$column, SplitRatio = 0.75)
 dataTrain = subset(data, split == TRUE)  
 dataTest = subset(data, split == FALSE)  
 ```
-### create logistic model
+
+- create logistic model  
+
 ```r
 logisModel = glm(column ~ independent variables, data = dataTrain, family=binomial)
 ```
-### predict
+
+- predict
+
 ```r
 predictTrain = predict(logisModel, newdata=dataTest, type="response")
 tapply(predictTrain, dataTrain$column, mean)
 ```
-### select a Threshold value
+
+- select a Threshold value
   
 |          |   Predicted=0        |     Predicted=1      |
 |:---------|:--------------------:|:--------------------:|
@@ -52,7 +58,7 @@ tapply(predictTrain, dataTrain$column, mean)
 threshold higher -> sensitivity lower  
 threshold lower -> sensitivity higher
 
-### ROC Curve
+### 3. ROC Curve
 ![kobito.1435571623.819722.png](https://qiita-image-store.s3.amazonaws.com/0/44948/372454ed-cc36-d7bc-2c73-c0f04d064d51.png "kobito.1435571623.819722.png")
 
 - True positive rate -> **sensitivity**  
@@ -60,7 +66,8 @@ proportion of poor care caught
 - False positive rate -> **1-specificity**  
 proportion of good care labeled as poor care
 
-### create ROC Curve
+- create ROC Curve
+
 ```r
 install.packages("ROCR")
 library(ROCR)
@@ -72,7 +79,7 @@ plot(ROCRperf)
 plot(ROCRperf, colorize=TRUE, print.cutoffs.at=seq(0,1,0.1), text.adj=c(-0.2, 1.7))
 ```
 
-### AUC(Area under the ROC Curve)
+- **AUC(Area under the ROC Curve)**
 
 ```r
 predictTest=predict(logisModel, type="response",newdata=dataTest)

@@ -14,10 +14,6 @@
   icon:  fa fa-search
   title: Search
 
-- href: /page/read.html
-  icon:  fa fa-bookmark
-  title: Read
-
 - href: /page/about.html
   icon: fa fa-paper-plane-o
   title: About
