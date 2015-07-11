@@ -53,18 +53,19 @@ tapply(predictTrain, dataTrain$column, mean)
 | Actual=0 |  True Negatives(TN)  |  False Positives(FP) |
 | Actual=1 |  False Negatives(FN) |  True Positives(TP)  |
   
-- sensitivity  $\frac{TP}{TP+FN}$  
-- specificity  $\frac{TN}{TN+FP}$  
-threshold higher -> sensitivity lower  
-threshold lower -> sensitivity higher
+    + sensitivity  $\frac{TP}{TP+FN}$  
+    + specificity  $\frac{TN}{TN+FP}$  
+        threshold higher -> sensitivity lower  
+        threshold lower -> sensitivity higher
 
 ### 3. ROC Curve
 ![kobito.1435571623.819722.png](https://qiita-image-store.s3.amazonaws.com/0/44948/372454ed-cc36-d7bc-2c73-c0f04d064d51.png "kobito.1435571623.819722.png")
 
-- True positive rate -> **sensitivity**  
-proportion of poor care caught
-- False positive rate -> **1-specificity**  
-proportion of good care labeled as poor care
+- parameter  
+    + True positive rate -> **sensitivity**  
+        proportion of poor care caught
+    + False positive rate -> **1-specificity**  
+        proportion of good care labeled as poor care
 
 - create ROC Curve
 
