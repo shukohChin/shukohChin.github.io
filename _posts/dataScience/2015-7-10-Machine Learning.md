@@ -6,10 +6,11 @@ tags: [machine_learning, coursera]
 ---
 
 # 目录
-- [1.Lenear Regression](#1.Lenear Regression)
-- [2.Logistic Regression](#2.Logistic Regression)
+- [1.Lenear Regression](#1)
+- [2.Logistic Regression](#2)
 
-### 1.Lenear Regression
+<a name="1"></a>
+# 1.Lenear Regression
 ### Machine learning定義
 * Field of study that gives computers the ability to learn without being explicitly programmed.
 * A computer program is said to _learn_ from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.
@@ -100,8 +101,8 @@ tags: [machine_learning, coursera]
 ### Feature Scalling
 
 
-
-### 2.Logistic Regression
+<a name="2"></a>
+# 2.Logistic Regression
 ### Classfication
 * 基本概念
 	Email: Spam/Not Spam
