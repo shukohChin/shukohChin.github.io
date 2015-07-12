@@ -71,9 +71,10 @@ tapply(predictTrain, dataTrain$column, mean)
 ```r
 install.packages("ROCR")
 library(ROCR)
-ROCRpred = prediction(predictTrain, dataTrain$column)
 #first arg: predictions we made using model
 #second arg: true outcomes of data
+#calculate ROC curve of training set
+ROCRpred = prediction(predictTrain, dataTrain$column)
 ROCRperf = performance(ROCRpred, "tpr", "fpr")
 plot(ROCRperf)
 plot(ROCRperf, colorize=TRUE, print.cutoffs.at=seq(0,1,0.1), text.adj=c(-0.2, 1.7))
@@ -82,6 +83,7 @@ plot(ROCRperf, colorize=TRUE, print.cutoffs.at=seq(0,1,0.1), text.adj=c(-0.2, 1.
 - **AUC(Area under the ROC Curve)**
 
 ```r
+#calculate AUC of testing set
 predictTest=predict(logisModel, type="response",newdata=dataTest)
 ROCRpredTest=prediction(predictTest, dataTest$column)
 auc=as.numeric(performance(ROCRpredTest,"auc")@y.values)
